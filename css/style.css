@@ -661,9 +661,9 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:45vw;
+        width:60vw;
         padding:0%;
-        padding-left:4%;
+        
         font-size: smaller;
     }
     .site-content .post-content>.post-image .post-info {
