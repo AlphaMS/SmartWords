@@ -521,7 +521,7 @@ h4 {
     .site-content .sidebar .popular-post .post-info {
         display: none !important;
     }
-    main .site-content {
+    main .page-container .site-content {
         grid-template-columns: 1fr;
     }
 }
