@@ -104,7 +104,7 @@ nav {
     width:100%;
 }
 nav h1{
-    font-size:4vh;
+    font-size:5vh;
     font-family: var(--Lexend);
     cursor: pointer;
     margin:2% 4%;
@@ -249,7 +249,7 @@ main .site-title .site-background {
 
 main .site-title h1{
     background:var(--fusion);
-    font-size: 6vh;
+    font-size: 7vh;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -702,7 +702,7 @@ h4 {
 
 @media only screen and (max-width: 520px) {
     nav h1{
-        font-size: 6vw;
+        font-size: 8.2vw;
         margin: 0%;
         padding-top: 7%;
     }
