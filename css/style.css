@@ -5,7 +5,7 @@ html,
 body {
     margin: 0;
     padding:0;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 :root {
@@ -83,7 +83,7 @@ p {
 }
 
 main {
-    margin-top: 10.4vh;
+    margin-top: 10vh;
     padding: 0px;
 }
 
@@ -92,13 +92,13 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
-    transition: top 0.5s;
+    transition: top 0.4s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
     position: fixed;
     z-index: 2;
-    border-bottom:1.5px solid black;
+    border-bottom:1px solid black;
     display:grid;
     grid-template-columns: 0.1fr 1.5fr 5fr 1fr;
     width:100%;
@@ -144,6 +144,7 @@ nav ul li {
     text-decoration: none;
     display: block;
     border:1.2px solid black;
+    text-align:center;
   }
 .topics a:hover{
     color:black;
@@ -661,9 +662,8 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:60vw;
+        width:47vw;
         padding:0%;
-        
         font-size: smaller;
     }
     .site-content .post-content>.post-image .post-info {
@@ -683,7 +683,7 @@ h4 {
 
 /*              Viewport less then or equal to 768px            */
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     main .site-content {
         grid-template-columns: 96%;
     }
