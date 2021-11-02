@@ -5,7 +5,7 @@ html,
 body {
     margin: 0;
     padding:0;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 :root {
@@ -83,7 +83,7 @@ p {
 }
 
 main {
-    margin-top: 10.4vh;
+    margin-top: 10vh;
     padding: 0px;
 }
 
@@ -92,19 +92,19 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
+    transition: top 0.4s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
     position: fixed;
     z-index: 2;
-    border-bottom:1.5px solid black;
+    border-bottom:1px solid black;
     display:grid;
     grid-template-columns: 0.1fr 1.5fr 5fr 1fr;
-    transition: top 0.2;
     width:100%;
 }
 nav h1{
-    font-size:6vh;
+    font-size:5vh;
     font-family: var(--Lexend);
     cursor: pointer;
     margin:2% 4%;
@@ -140,10 +140,11 @@ nav ul li {
     color: white;
     background-color: rgb(49, 197, 62);
     float: none;
-    padding: 6px 8px;
+    padding: 8px;
     text-decoration: none;
     display: block;
     border:1.2px solid black;
+    text-align:center;
   }
 .topics a:hover{
     color:black;
@@ -194,6 +195,7 @@ nav ul li:hover{
 
 
 
+
 /* -------x------- navbar ---------x------- */
 .contact-us .container {
   position: relative;
@@ -214,7 +216,6 @@ nav ul li:hover{
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -222,6 +223,7 @@ nav ul li:hover{
 .contact-form {
   background-color: #32c9f3;
   position: relative;
+  padding:2%;
 }
 
 .circle {
@@ -255,13 +257,6 @@ nav ul li:hover{
   left: -13px;
 }
 
-.contact-us form {
-  padding: 0.8rem 1.5rem;
-  z-index: 10;
-  overflow: hidden;
-  position: relative;
-}
-
 .contact-us .title {
   color: #fff;
   font-weight: 500;
@@ -276,7 +271,7 @@ nav ul li:hover{
 }
 
 .contact-us .input {
-  width: 90%;
+  width: 80%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
@@ -286,7 +281,7 @@ nav ul li:hover{
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   border-radius: 25px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 textarea.input {
@@ -634,7 +629,9 @@ h4 {
       grid-column-end: 5;
       justify-self: end;
   }
-
+  .contact-us .form{
+    grid-template-columns: 1fr;
+  }
 }
 
 /*      x       Viewport less then or equal to 1000px    x     */

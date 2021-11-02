@@ -83,7 +83,7 @@ p {
 }
 
 main {
-    margin-top: 11vh;
+    margin-top: 10vh;
     padding: 0px;
 }
 
@@ -252,7 +252,8 @@ main .post-content .post-content a {
 }
 main .post-content .post-title a {
     font-family: var(--Anton);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .site-content .pagination {
