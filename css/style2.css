@@ -362,6 +362,7 @@ footer{
 footer.footer {
     position: relative;
     background: var(--bg-color);
+    padding-left: 5%;
 }
 
 footer.footer .container {
@@ -372,18 +373,17 @@ footer.footer .container {
 footer.footer .container h2 {
     color: var(--white);
 }
-footer.footer .about-us{
-    padding-left:5%;
-}
 
 footer.footer .newsletter .form-element {
+    width:90%;
     background: black;
-    padding: 0.1rem .1rem;
+    padding: 0.2rem 0rem;
     display: inline-block;
     height: 2rem;
 }
 
 footer.footer .newsletter .form-element input {
+    width:85%;
     border: none;
     background: transparent;
     color: white;
@@ -451,6 +451,9 @@ h4 {
 /*              Viewport less then or equal to 1000px            */
 
 @media only screen and (max-width: 1000px) {
+    main{
+        padding-left:5%;
+    }
     nav {
         grid-template-columns: 1fr 4fr 0.1fr 1fr;
         width: 100%;
@@ -508,9 +511,8 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:60vw;
+        width:47vw;
         padding:0%;
-        
         font-size: smaller;
     }
     .site-content .post-content>.post-image .post-info {
@@ -522,9 +524,11 @@ h4 {
     .site-content .sidebar .popular-post .post-info {
         display: none !important;
     }
-    main .page-container .site-content {
-        grid-template-columns: 1fr;
+    footer.footer .container{
+        grid-template-columns: 1fr 1fr;
     }
+
+    
 }
 
 /*      x       Viewport less then or equal to 1000px    x     */
@@ -532,14 +536,11 @@ h4 {
 
 /*              Viewport less then or equal to 768px            */
 
-@media only screen and (max-width: 769px) {
-    
-    
-    footer.footer .container{
-        grid-template-columns: 1fr;
-        justify-content: center;
+@media only screen and (max-width: 768px) {
+    main .site-content {
+        grid-template-columns: 96%;
     }
-
+    
 }
 
 
@@ -552,7 +553,8 @@ h4 {
     nav h1{
         font-size: 8.2vw;
         margin: 0%;
-        padding-top: 7%;
+        padding-top: 2%;
+        font-weight: 800;
     }
     
     main .blog {
@@ -565,11 +567,13 @@ h4 {
     main .site-content .home-posts .post-content>.post-image .img{
         height:300px;
     }
+    footer.footer .container{
+        grid-template-columns: 1fr;
+    }
     footer .rights {
         padding: 0 1.4rem;
         text-align: center;
     }
-    
 }
 
 /*----------x-----Viewport less then or equal to 520px----x---*/
