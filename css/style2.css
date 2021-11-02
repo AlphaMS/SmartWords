@@ -537,8 +537,8 @@ h4 {
 /*              Viewport less then or equal to 768px            */
 
 @media only screen and (max-width: 768px) {
-    main .site-content {
-        grid-template-columns: 96%;
+    main .page-container .site-content {
+        grid-template-columns:1fr;
     }
     
 }
