@@ -458,8 +458,6 @@ h4 {
 
 
 
-
-
 /*              Viewport less then or equal to 1000px            */
 
 @media only screen and (max-width: 1000px) {
@@ -537,7 +535,6 @@ h4 {
         grid-template-columns: 1fr 1fr;
     }
 
-    
 }
 
 /*      x       Viewport less then or equal to 1000px    x     */
@@ -545,11 +542,12 @@ h4 {
 
 /*              Viewport less then or equal to 768px            */
 
-@media only screen and (max-width: 768px) {
-    main .site-content {
-        grid-template-columns: 96%;
+@media only screen and (max-width: 769px) {
+    footer.footer div.container{
+        grid-template-columns: 1fr 1fr;
     }
-    
+   
+
 }
 
 
@@ -565,17 +563,6 @@ h4 {
         padding-top: 2%;
         font-weight: 800;
     }
-    
-    main .blog {
-        height: 110vh;
-    }
-
-    .site-content .post-content>.post-image .post-info {
-        display: none;
-    }
-    main .site-content .home-posts .post-content>.post-image .img{
-        height:300px;
-    }
     footer.footer .container{
         grid-template-columns: 1fr;
     }
@@ -584,5 +571,6 @@ h4 {
         text-align: center;
     }
 }
+
 
 /*----------x-----Viewport less then or equal to 520px----x---*/

@@ -524,7 +524,16 @@ h4 {
         grid-template-columns: 1fr 1fr;
     }
 
-    
+    .grid-container img{
+        border-radius: 200px;
+        margin:auto;
+        width:50%;
+        }
+
+    #caption-1{
+        padding:20% 0%;
+        margin:5%;
+    }
 }
 
 /*      x       Viewport less then or equal to 1000px    x     */
@@ -532,11 +541,12 @@ h4 {
 
 /*              Viewport less then or equal to 768px            */
 
-@media only screen and (max-width: 768px) {
-    main .site-content {
-        grid-template-columns: 96%;
+@media only screen and (max-width: 769px) {
+    footer.footer div.container{
+        grid-template-columns: 1fr 1fr;
     }
-    
+   
+
 }
 
 
@@ -546,22 +556,12 @@ h4 {
 /*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px) {
+    
     nav h1{
         font-size: 8.2vw;
         margin: 0%;
         padding-top: 2%;
         font-weight: 800;
-    }
-    
-    main .blog {
-        height: 110vh;
-    }
-
-    .site-content .post-content>.post-image .post-info {
-        display: none;
-    }
-    main .site-content .home-posts .post-content>.post-image .img{
-        height:300px;
     }
     footer.footer .container{
         grid-template-columns: 1fr;
@@ -572,7 +572,10 @@ h4 {
     }
 }
 
+
 /*----------x-----Viewport less then or equal to 520px----x---*/
+
+
 
 
 

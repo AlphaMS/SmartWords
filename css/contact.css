@@ -483,6 +483,8 @@ textarea.input {
 
 
 /* ----------------- Footer --------------------- */
+
+/* ----------------- Footer --------------------- */
 footer{
   margin-top: 10vh;
 }
@@ -573,86 +575,85 @@ h4 {
 
 
 
-
-
 /*              Viewport less then or equal to 1000px            */
 
 @media only screen and (max-width: 1000px) {
   nav {
-      grid-template-columns: 1fr 4fr 0.1fr 1fr;
-      width: 100%;
-  }
-  #home-icon{
-      grid-column-start: 4;
-  }
-  nav ul li {
-      display: none;
-  }
+    grid-template-columns: 1fr 4fr 0.1fr 1fr;
+    width: 100%;
+}
+#home-icon{
+    grid-column-start: 4;
+}
+nav ul li {
+    display: none;
+}
 
-  nav .checkbox{
-      justify-self: center;
-      padding:0.5vh;
-      margin:0%;
-      height:8vh;
-      cursor: pointer;
-  }
-  nav .checkbox span{
-      background-color: black;
-      border-radius: .9vh;
-      width: 6vh;
-      height: 1.2vh;
-      margin-top: 1vh;
-      display: flex;
-      flex-direction: column;
-  }
-  #checkbox:checked ~ ul{
-      display: block;
-      width:70%;
-      height: 65vh;
-      position: absolute;
-      background-color: rgb(98, 245, 233);
-      top: 10.2vh;
-      animation: left-to-right-slide-effect 0.1s linear;
-      padding: 0;
-      margin:0%;
-  }
-  #checkbox:checked ~ ul li{
-      display: block;
-      margin:0%;
-      height: 10vh;
-      padding: 1% 2.7%;
-      border-bottom:1px solid black;
-      font-weight: 400;
-      line-height: 9.8vh;
-  }
-  #checkbox:checked ~ ul li:hover{
-      width:95%;
-      background-color: var(--midnight);
-      color: white;
-  }
-  nav .topics{
-      margin-left:-1.2vh;
-      margin-top:0.7vh;
-  }
-  nav .topics a {
-      width:47vw;
-      padding:0%;
-      font-size: smaller;
-  }
-  .site-content .post-content>.post-image .post-info {
-      left: 2rem !important;
-      bottom: 1.2rem !important;
-      border-radius: 0% !important;
-  }
+nav .checkbox{
+    justify-self: center;
+    padding:0.5vh;
+    margin:0%;
+    height:8vh;
+    cursor: pointer;
+}
+nav .checkbox span{
+    background-color: black;
+    border-radius: .9vh;
+    width: 6vh;
+    height: 1.2vh;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+#checkbox:checked ~ ul{
+    display: block;
+    width:70%;
+    height: 65vh;
+    position: absolute;
+    background-color: rgb(98, 245, 233);
+    top: 10.2vh;
+    animation: left-to-right-slide-effect 0.1s linear;
+    padding: 0;
+    margin:0%;
+}
+#checkbox:checked ~ ul li{
+    display: block;
+    margin:0%;
+    height: 10vh;
+    padding: 1% 2.7%;
+    border-bottom:1px solid black;
+    font-weight: 400;
+    line-height: 9.8vh;
+}
+#checkbox:checked ~ ul li:hover{
+    width:95%;
+    background-color: var(--midnight);
+    color: white;
+}
+nav .topics{
+    margin-left:-1.2vh;
+    margin-top:0.7vh;
+}
+nav .topics a {
+    width:47vw;
+    padding:0%;
+    font-size: smaller;
+}
+.site-content .post-content>.post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+}
 
-  .site-content .sidebar .popular-post .post-info {
-      display: none !important;
+.site-content .sidebar .popular-post .post-info {
+    display: none !important;
+}
+footer.footer .container{
+    grid-template-columns: 1fr 1fr;
+}
+  .contact-us .form{
+    grid-template-columns: 1fr;
   }
-  footer.footer .container{
-      grid-template-columns: 1fr 1fr;
-  }
-
-  
 }
 
 /*      x       Viewport less then or equal to 1000px    x     */
@@ -660,11 +661,12 @@ h4 {
 
 /*              Viewport less then or equal to 768px            */
 
-@media only screen and (max-width: 768px) {
-  main .site-content {
-      grid-template-columns: 96%;
+@media only screen and (max-width: 769px) {
+  footer.footer div.container{
+      grid-template-columns: 1fr 1fr;
   }
-  
+ 
+
 }
 
 
@@ -675,29 +677,19 @@ h4 {
 
 @media only screen and (max-width: 520px) {
   nav h1{
-      font-size: 8.2vw;
-      margin: 0%;
-      padding-top: 2%;
-      font-weight: 800;
-  }
-  
-  main .blog {
-      height: 110vh;
-  }
-
-  .site-content .post-content>.post-image .post-info {
-      display: none;
-  }
-  main .site-content .home-posts .post-content>.post-image .img{
-      height:300px;
-  }
-  footer.footer .container{
-      grid-template-columns: 1fr;
-  }
-  footer .rights {
-      padding: 0 1.4rem;
-      text-align: center;
-  }
+    font-size: 8.2vw;
+    margin: 0%;
+    padding-top: 2%;
+    font-weight: 800;
 }
+footer.footer .container{
+    grid-template-columns: 1fr;
+}
+footer .rights {
+    padding: 0 1.4rem;
+    text-align: center;
+}
+}
+
 
 /*----------x-----Viewport less then or equal to 520px----x---*/
