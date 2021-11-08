@@ -1,5 +1,5 @@
 @import url('../css/fonts.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
        
 html,
 body {
@@ -77,7 +77,8 @@ span {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 
 
 }
