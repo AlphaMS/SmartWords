@@ -93,15 +93,15 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
+    transition: top 0.4s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
     position: fixed;
     z-index: 2;
-    border-bottom:1.5px solid black;
+    border-bottom:1px solid black;
     display:grid;
     grid-template-columns: 0.1fr 1.5fr 5fr 1fr;
-    transition: top 0.2;
     width:100%;
 }
 nav h1{
@@ -145,6 +145,7 @@ nav ul li {
     text-decoration: none;
     display: block;
     border:1.2px solid black;
+    text-align:center;
   }
 .topics a:hover{
     color:black;
