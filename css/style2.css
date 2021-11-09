@@ -513,9 +513,13 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:47vw;
+        line-height:9vh;
+        width:49vw;
         padding:0%;
-        font-size: smaller;
+        font-size:3vh;
+    }
+    .dropdown:hover .topics{
+        height:45vh;
     }
     .site-content .post-content>.post-image .post-info {
         left: 2rem !important;
