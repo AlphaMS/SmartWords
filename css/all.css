@@ -4317,7 +4317,7 @@ readers do not read off random characters that represent icons */
 .fa-yandex:before {
   content: "\f413"; }
 
-.fa-yandex-international:before {
+.fa-yandex-International:before {
   content: "\f414"; }
 
 .fa-yarn:before {
