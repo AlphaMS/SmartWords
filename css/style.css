@@ -218,12 +218,12 @@ main .site-title .site-background {
     padding: 11% 0 25% 5%;     
 }
 .site-background-na{
-    background: url('../assets/Background/National.jpg') no-repeat;
+    background: url('../assets/Background/national.jpg') no-repeat;
     background-size: 100% 100%;
     padding: 11% 0 25% 5%;    
 }
 .site-background-in{
-    background: url('../assets/Background/International.jpg') no-repeat;
+    background: url('../assets/Background/international.jpg') no-repeat;
     background-size: 100% 100%;
     padding: 11% 0 25% 5%;    
 }
