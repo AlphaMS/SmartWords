@@ -1,11 +1,11 @@
 @import url('../css/fonts.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
        
 html,
 body {
     margin: 0;
     padding:0;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 :root {
@@ -18,8 +18,10 @@ body {
     --midnight: #406bf8;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    --fusion:linear-gradient(to right,#f61111,#e6f519);
+    --sky: linear-gradient(120deg,#c2e9fb  0%,#176bf1  100%);
+    --fusion:linear-gradient(to right,#f61111,#f5e619);
+    --purple:linear-gradient(120deg,#a020f0 0%,#d580ff 100%);
+    --smart:linear-gradient(to right,#4ee2fc 0%,#5a70f0 50%,#1102e0 100%);
     
 
     /*      theme font-family   */
@@ -52,6 +54,7 @@ ul {
 h1 {
     font-family: var(--Lexend);
     margin-top: 0%;
+    margin-left:3%;
 }
 
 h3 {
@@ -77,9 +80,7 @@ span {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -92,7 +93,7 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
-    transition: top 0.4s;
+    transition: top 0.3s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
@@ -105,11 +106,10 @@ nav {
 }
 nav h1{
     font-size:5vh;
-    font-family: var(--Lexend);
     cursor: pointer;
     margin:2% 4%;
     padding-top:1%;
-    background:var(--fusion);
+    background:var(--smart);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -136,11 +136,11 @@ nav ul li {
     margin-top: 1.2vh;
 }
 .topics a {
-    width:17vw;
+    width:15vw;
     color: white;
-    background-color: rgb(49, 197, 62);
+    background-color: rgb(160, 230, 56);
     float: none;
-    padding: 8px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     border:1.2px solid black;
@@ -171,7 +171,7 @@ nav ul li:hover{
 }
 
 .fa-home{
-    font-size:7vh;
+    font-size:6vh;
     padding-top:2vh;
 }
 
@@ -204,37 +204,37 @@ nav ul li:hover{
         grid-template-columns: auto auto;
     }
 
-
-
-
-    .grid-container img{
-    border-radius: 200px;
-    padding: 0%;
-    width:30%;
-    }
     
+    
+    .welcome{
+        background-image: url("../assets/Background/join-us.jpg");
+        background-size: cover;
+    }    
     .card{
     
-        background-color: rgb(238, 238, 238);
+        background-color: rgb(193, 255, 134);
         margin: 1rem;
-        padding: 1rem;
-        display:flex;
+        padding: 1rem 1%;
+        display:grid;
+        grid-template-columns: 2.5fr 3.5fr;
     }
-   
+    .grid-container img{
+        border-radius: 200px;
+        padding: 0%;
+        width:100%;
+        height:100%
+        }   
 
-    .welcome{
-        background-image: url("../assets/Join-us BG.jpg");
-        background-size: cover;
-    }         
+         
                 
             
     #caption-1{
-    padding:20% 18%;
+    padding:20% 10%;
     margin:0%;
     margin-bottom: 5%;
-    text-shadow: 2px 3px 6px black;
+    color:white;
     animation-name: caption;
-    animation-duration: 2s;
+    animation-duration: 1s;
     }
 
 @keyframes caption {
@@ -257,37 +257,37 @@ nav ul li:hover{
 }   
     
 
-    .developer:hover{
-        box-shadow:0px 3px 5px 3px #8c8c8c
+.developer:hover{
+    box-shadow:0px 3px 5px 3px #8c8c8c
 
-    }
-    .creator:hover{
-        box-shadow:0px 3px 5px 3px #8c8c8c
-    }
-    .innovater:hover{
-        box-shadow:0px 3px 5px 3px #8c8c8c
-    }
+}
+.creator:hover{
+    box-shadow:0px 3px 5px 3px #8c8c8c
+}
+.innovater:hover{
+    box-shadow:0px 3px 5px 3px #8c8c8c
+}
 
-    .developer img:hover{
-        box-shadow:0 1px 1px 1px #8c8c8c;
-    }
-    .creator img:hover{
-        box-shadow:0 1px 1px 1px #8c8c8c;
-    }
-    .innovater img:hover{
-        box-shadow:0 1px 1px 1px #8c8c8c;
-    }
-
-
+.developer img:hover{
+    box-shadow:0 1px 1px 1px #8c8c8c;
+}
+.creator img:hover{
+    box-shadow:0 1px 1px 1px #8c8c8c;
+}
+.innovater img:hover{
+    box-shadow:0 1px 1px 1px #8c8c8c;
+}
 
 
-    .member:hover{
-        box-shadow:0px 3px 5px 3px #8c8c8c}
 
 
-    .member img:hover{
-        box-shadow:0 1px 1px 1px #8c8c8c;}
-    
+.member:hover{
+    box-shadow:0px 3px 5px 3px #8c8c8c}
+
+
+.member img:hover{
+    box-shadow:0 1px 1px 1px #8c8c8c;}
+
 
 @media only screen and (max-width:1000px) {
     .card{
@@ -315,12 +315,11 @@ nav ul li:hover{
     color: #fff;
     padding: 20px;
     width: 200px;
-    text-align: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     overflow: hidden;
     box-shadow: 0 5px 15px #193047;
     border-radius: 9%;
-    margin-bottom: 5%;
+    margin: 5%;
   }
   
   #btn:hover {
@@ -329,18 +328,7 @@ nav ul li:hover{
     color: #000;
   }
   
-  #btn:after {
-    content: "";
-    background: #1abc9c;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
+ 
   
   #btn:active:after {
     padding: 0;
@@ -507,9 +495,13 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:47vw;
+        line-height:9vh;
+        width:49vw;
         padding:0%;
-        font-size: smaller;
+        font-size:3vh;
+    }
+    .dropdown:hover .topics{
+        height:45vh;
     }
     .site-content .post-content>.post-image .post-info {
         left: 2rem !important;
@@ -527,7 +519,7 @@ h4 {
     .grid-container img{
         border-radius: 200px;
         margin:auto;
-        width:50%;
+        width:100%;
         }
 
     #caption-1{

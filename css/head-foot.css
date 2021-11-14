@@ -1,5 +1,5 @@
 @import url('../css/fonts.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
        
 html,
 body {
@@ -18,8 +18,10 @@ body {
     --midnight: #406bf8;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    --fusion:linear-gradient(to right,#f61111,#e6f519);
+    --sky: linear-gradient(120deg,#c2e9fb  0%,#176bf1  100%);
+    --fusion:linear-gradient(to right,#f61111,#f5e619);
+    --purple:linear-gradient(120deg,#a020f0 0%,#d580ff 100%);
+    --smart:linear-gradient(to right,#4ee2fc 0%,#5a70f0 50%,#1102e0 100%);
     
 
     /*      theme font-family   */
@@ -77,13 +79,11 @@ span {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
-    margin-top: 10.4vh;
+    margin-top: 10vh;
     padding: 0px;
 }
 
@@ -92,24 +92,23 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
+    transition: top 0.3s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
     position: fixed;
     z-index: 2;
-    border-bottom:1.5px solid black;
+    border-bottom:1px solid black;
     display:grid;
     grid-template-columns: 0.1fr 1.5fr 5fr 1fr;
-    transition: top 0.2;
     width:100%;
 }
 nav h1{
-    font-size:6vh;
-    font-family: var(--Lexend);
+    font-size:5vh;
     cursor: pointer;
     margin:2% 4%;
     padding-top:1%;
-    background:var(--fusion);
+    background:var(--smart);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -136,14 +135,15 @@ nav ul li {
     margin-top: 1.2vh;
 }
 .topics a {
-    width:17vw;
+    width:15vw;
     color: white;
-    background-color: rgb(49, 197, 62);
+    background-color: rgb(160, 230, 56);
     float: none;
-    padding: 6px 8px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     border:1.2px solid black;
+    text-align:center;
   }
 .topics a:hover{
     color:black;
@@ -170,7 +170,7 @@ nav ul li:hover{
 }
 
 .fa-home{
-    font-size:7vh;
+    font-size:6vh;
     padding-top:2vh;
 }
 

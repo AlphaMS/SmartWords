@@ -1,11 +1,11 @@
 @import url('../css/fonts.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
        
 html,
 body {
     margin: 0;
     padding:0;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 :root {
@@ -18,8 +18,10 @@ body {
     --midnight: #406bf8;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    --fusion:linear-gradient(to right,#f61111,#e6f519);
+    --sky: linear-gradient(120deg,#c2e9fb  0%,#176bf1  100%);
+    --fusion:linear-gradient(to right,#f61111,#f5e619);
+    --purple:linear-gradient(120deg,#a020f0 0%,#d580ff 100%);
+    --smart:linear-gradient(to right,#4ee2fc 0%,#5a70f0 50%,#1102e0 100%);
     
 
     /*      theme font-family   */
@@ -51,6 +53,7 @@ ul {
 
 h1 {
     font-family: var(--Lexend);
+    margin: 0% auto;
 }
 
 h3 {
@@ -66,19 +69,13 @@ button.btn {
     cursor: pointer;
 }
 
-span {
-    font-family: var(--Abel);
-}
-
 
 .text-gray {
     color: var(--text-gray);
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -91,7 +88,7 @@ main {
 /* --------------- navbar ----------------- */
 
 nav {
-    transition: top 0.4s;
+    transition: top 0.3s;
     background-color: #FFFDD0;
     min-height:40px;
     height: 10vh;
@@ -104,11 +101,10 @@ nav {
 }
 nav h1{
     font-size:5vh;
-    font-family: var(--Lexend);
     cursor: pointer;
     margin:2% 4%;
     padding-top:1%;
-    background:var(--fusion);
+    background:var(--smart);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -135,11 +131,11 @@ nav ul li {
     margin-top: 1.2vh;
 }
 .topics a {
-    width:17vw;
+    width:15vw;
     color: white;
-    background-color: rgb(49, 197, 62);
+    background-color: rgb(160, 230, 56);
     float: none;
-    padding: 8px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     border:1.2px solid black;
@@ -170,7 +166,7 @@ nav ul li:hover{
 }
 
 .fa-home{
-    font-size:7vh;
+    font-size:6vh;
     padding-top:2vh;
 }
 
@@ -191,6 +187,7 @@ nav ul li:hover{
             right: 75%;
         }
     }
+
 
 
 
@@ -254,12 +251,12 @@ nav ul li:hover{
 }
 
 .about .image{
-  padding: 8%;
+  padding: 5%;
   margin:auto;
   animation: img 1s ease-in;
 }
 .image img{
-    width:30vw;
+    width:20vw;
 }
 
 
@@ -504,9 +501,13 @@ h4 {
         margin-top:0.7vh;
     }
     nav .topics a {
-        width:47vw;
+        line-height:9vh;
+        width:49vw;
         padding:0%;
-        font-size: smaller;
+        font-size:3vh;
+    }
+    .dropdown:hover .topics{
+        height:45vh;
     }
     .about .about-us{
         grid-template-columns: 1fr;
