@@ -54,6 +54,7 @@ ul {
 h1 {
     font-family: var(--Lexend);
     margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 h3 {
@@ -106,16 +107,20 @@ nav {
 nav h1{
     font-size:5vh;
     cursor: pointer;
-    margin:2% 4%;
-    padding-top:1%;
+    padding-top:5px;
     background:var(--smart);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-book{
+    background:var(--purple);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
 nav ul.nav-items{
     display:flex;
-    flex-wrap: wrap;
     margin:0% 5%;
     justify-content: center;
 }
@@ -131,7 +136,7 @@ nav ul li {
     display:none;
     position: absolute;
     min-width: 150px;
-    margin-left:-1.9vh;
+    margin-left:-2vh;
     margin-top: 1.2vh;
 }
 .topics a {
@@ -139,7 +144,7 @@ nav ul li {
     color: white;
     background-color: rgb(160, 230, 56);
     float: none;
-    padding: 5px;
+    padding: 3%;
     text-decoration: none;
     display: block;
     border:1.2px solid black;
@@ -179,7 +184,7 @@ nav ul li:hover{
             left: 100%;
         }
         to{
-            left: 75%;
+            left: 40%;
         }
     }
 
@@ -188,7 +193,7 @@ nav ul li:hover{
             right: 100%;
         }
         to{
-            right: 75%;
+            right: 40%;
         }
     }
 
