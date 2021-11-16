@@ -508,12 +508,12 @@ h4 {
         color: white;
     }
     nav .topics{
-        margin-left:-2vh;
+        margin-left:-1.8vh;
         margin-top:0.5vh;
     }
     nav .topics a {
         line-height:8vh;
-        width:45vw;
+        width:47vw;
         padding:0%;
         font-size:3vh;
     }
