@@ -151,7 +151,7 @@ nav ul li {
 }
 
 .dropdown:hover .topics{
-    height:40vh;
+    height:45vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -319,22 +319,22 @@ h4 {
     }
     #checkbox:checked ~ ul{
         display: block;
-        width:50%;
-        height: 80vh;
+        width:60%;
+        height: 55vh;
         position: absolute;
         background-color: rgb(98, 245, 233);
         top: 10.2vh;
         animation: left-to-right-slide-effect 0.1s linear;
-        padding: 0;
+        margin:0%;
     }
     #checkbox:checked ~ ul li{
         display: block;
         margin:0%;
         height: 10vh;
-        padding: 1% 0% 0.5% 5%;
+        padding: 1.3% 2.7%;
         border-bottom:1px solid black;
         font-weight: 400;
-        line-height: 9vh;
+        line-height:10vh;
     }
     #checkbox:checked ~ ul li:hover{
         width:95%;
