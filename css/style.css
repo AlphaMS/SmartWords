@@ -656,7 +656,8 @@ h4 {
         padding:2%;
     }
     main .site-title h1{
-        font-size:7vh;
+        font-size:6vh;
+        margin-top:5vh;
     }
     .site-content .post-content>.post-image .post-info {
         left: 2rem !important;
@@ -683,7 +684,9 @@ h4 {
     main .site-content {
         grid-template-columns: 96%;
     }
-    
+    p{
+        font-size: smaller;
+    }
 }
 
 
@@ -696,7 +699,7 @@ h4 {
     nav h1{
         font-size: 8.2vw;
         margin: 0%;
-        padding-top: 1vh;
+       padding-top:1.5vh;
         font-weight: 800;
     }
     
@@ -708,7 +711,7 @@ h4 {
         display: none;
     }
     main .site-content .home-posts .post-content>.post-image .img{
-        height:300px;
+        height:220px;
     }
     footer.footer .container{
         grid-template-columns: 1fr;

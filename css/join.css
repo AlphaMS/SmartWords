@@ -526,7 +526,7 @@ h4 {
 /*              Viewport less then or equal to 768px            */
 
 @media only screen and (max-width: 769px) {
-    footer.footer div.container{
+    footer.footer .container{
         grid-template-columns: 1fr 1fr;
     }
    
@@ -544,7 +544,7 @@ h4 {
     nav h1{
         font-size: 8.2vw;
         margin: 0%;
-        padding-top: 1vh;
+       padding-top:1.5vh;
         font-weight: 800;
     }
     footer.footer .container{
