@@ -24,12 +24,6 @@ body {
     --smart:linear-gradient(to right,#4ee2fc 0%,#5a70f0 50%,#1102e0 100%);
     
 
-    /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin: 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Livvic: 'Livvic', cursive;
 }
 
 
@@ -681,7 +675,7 @@ footer.footer .container{
   nav h1{
     font-size: 8.2vw;
     margin: 0%;
-    padding-top: 2%;
+    padding-top: 1vh;
     font-weight: 800;
 }
 footer.footer .container{
