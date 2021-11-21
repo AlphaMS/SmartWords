@@ -113,7 +113,7 @@ nav h1{
     background-clip: text;
     -webkit-background-clip: text;
 }
-nav ul.nav-items{
+nav ul{
     display:flex;
     margin:0% 5%;
     justify-content: center;
@@ -452,13 +452,13 @@ h4 {
     #home-icon{
         grid-column-start: 4;
     }
-    nav ul li {
-        display: none;
+    .active{
+        display:block;
     }
   
     nav .checkbox{
         justify-self: center;
-        padding-top:1.7vh;
+        padding:1vh; padding-top:1.7vh; 
         cursor: pointer;
     }
     nav .checkbox span{
@@ -470,8 +470,8 @@ h4 {
         display: flex;
         flex-direction: column;
     }
-    #checkbox:checked ~ ul{
-        display: block;
+    nav ul{
+        display: none;
         width:60%;
         position: absolute;
         background-color: rgb(98, 245, 233);
@@ -479,14 +479,14 @@ h4 {
         animation: left-to-right-slide-effect 0.3s;
         margin:0%;
     }
-    #checkbox:checked ~ ul li{
+   nav ul li{
         display: block;
         margin:0%;
         padding: 1.3% 0% 1.3% 6%;
         border-bottom:1px solid black;
         line-height:10vh;
     }
-    #checkbox:checked ~ ul li:hover{
+    nav ul li:hover{
         width:94%;
         background-color: var(--midnight);
         color: white;
