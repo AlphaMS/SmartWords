@@ -14,12 +14,11 @@ const responsive = {
 }
 
 $(document).ready(function () {
-
- $(document).on('mousedown',function(e){
-     if (e.target.id == "toggle") {
-       $("#sidebar").toggleClass("active");
-     }
-     else if (e.target.parentNode.id == "sidebar" || e.target.parentNode.class == "topics") {
+$("#toggle").click(function(){
+  $("#sidebar").toggleClass("active");
+});
+ $(document).on('click',function(e){
+     if (e.target.parentNode.id == "sidebar" || e.target.parentNode.class == "topics") {
        $("sidebar").addClass("active");
      }
      else {
