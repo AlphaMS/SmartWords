@@ -15,17 +15,17 @@ const responsive = {
 
 $(document).ready(function () {
 
- $(document).click(function(e){
-if(e.target.id=="toggle"){
-  $("#sidebar").toggleClass("active");
-}
-else if(e.target.parentNode.id=="sidebar" || e.target.parentNode.class=="topics"){
-  $("sidebar").addClass("active");
-}
-else{
-  $("sidebar").removeClass("active");
-}
-});
+ $(document).on('mousedown',function(e){
+     if (e.target.id == "toggle") {
+       $("#sidebar").toggleClass("active");
+     }
+     else if (e.target.parentNode.id == "sidebar" || e.target.parentNode.class == "topics") {
+       $("sidebar").addClass("active");
+     }
+     else {
+       $("sidebar").removeClass("active");
+     }
+   });
 
     // owl-crousel for blog
     $('.owl-carousel').owlCarousel({
