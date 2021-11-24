@@ -275,6 +275,7 @@ nav ul li:hover{
   box-shadow: 0px 1px 5px 0px rgb(214, 124, 124);
 }
 .profile h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:2% 0%;
 }
 
