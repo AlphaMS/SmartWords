@@ -14,10 +14,20 @@ const responsive = {
 }
 
 $(document).ready(function () {
+  $('html, body').scrollTop(0);
+
+  $(window).on('load', function() {
+    document.getElementById("navbar").style.top = "0";
+  setTimeout(function(){
+      $('html, body').scrollTop(0);
+      
+  }, 0);
+});
+
 $("#toggle").click(function(){
   $("#sidebar").toggleClass("active");
 });
- $(document).on('click',function(e){
+ $(document).click((e) => {
      if (e.target.parentNode.id == "sidebar" || e.target.parentNode.class == "topics") {
        $("sidebar").addClass("active");
      }
@@ -65,7 +75,6 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
