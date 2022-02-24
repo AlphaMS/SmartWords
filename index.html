@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M6X3ZZD');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Get precise,accurate and reliable articles in different fields like education, finance, life, technology etc. We write articles that provide you the perfect content and best analysis on all topics.">
@@ -32,73 +22,67 @@
     <link rel="stylesheet" text="text/css" href="./css/aos.css">
 
     <!-- Custom Style   -->
-    <link rel="stylesheet" text="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/gajendra.css">
 
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6X3ZZD" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
-
-    <nav id="navbar">
-        <div id="toggle" class="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <a href="./index.html">
-            <h1><i class="fas fa-book"> <b></i> Smart<sup>Words</sup></b></h1>
-        </a>
-
-        <ul id="sidebar" class="nav-items">
-            <a href="./index.html">
-                <li>
-                    Home
-                </li>
-            </a>
-
-            <li class="dropdown">
-                Articles <span class="fas fa-sort-down"></span>
-                <div class="topics">
-                    <a href="./Education.html">Education</a>
-                    <a href="./Technology.html">Technology</a>
-                    <a href="./National.html">National</a>
-                    <a href="./International.html">International</a>
-                    <a href="./Careerguidance.html">Career Guidance</a>
-                    <a href="./Lifeguidance.html">Life Guidance</a>
-                    <a href="./Environment.html">Environment</a>
-                    <a href="./Finance.html">Finance</a>
-                </div>
-            </li>
-
-
-            <a href="./about.html">
-                <li>
-                    About Us
-                </li>
-            </a>
-            <a href="./join-us.html">
-                <li>
-                    Join Us
-                </li>
-            </a>
-
-            <a href="./contact.html ">
-                <li>
-                    Contact Us
-                </li>
-            </a>
+    <nav>
+        <ul>
+            <a href="./index.html"><li class="home2">Home</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./join-us.html"><li>Join Us</li></a>
+            <a href="./contact.html"><li>Contact Us</li></a>
         </ul>
-
-        <div id="home-icon">
-            <a href="./index.html">
-                <div class="fas fa-home"></div>
-            </a>
+        <ul>
+            <a href="https://www.facebook.com/" target="_blank"><li class="fab fa-facebook-f"></li></a>
+            <a href="https://www.quora.com/" target="_blank"><li class="fab fa-quora"></li></a>
+            <a href="https://www.instagram.com/thewizards_official/" target="_blank"><li class="fab fa-instagram"></li></a>
+            <a href="https://www.youtube.com/" target="_blank"><li class="fab fa-youtube"></li></a>
+        </ul>
+    </nav>
+    <nav class="nav">
+        <div class="page-title">
+            <a href="./index.html"><h1><span class="fas fa-book"> </span> Smart <sup>words</sup></h1></a>
         </div>
+            <i class="fas fa-list-ul nvm"></i>
+            <ul class="menu">
+                <a href="./index.html"><li class="home nvs">Home</li></a>
+                <div>
+                    <a href="./Education.html"><li class="nvs">Education</li></a>
+                    <a href="./National.html"><li class="nvs">National</li></a>
+                    <a href="./International.html"><li class="nvs">International</li></a>
+                    <a href="./Technology.html"><li class="nvs">Technology</li></a>
+                    <a href="./Finance.html"><li class="nvs">Financial</li></a>
+                    <a href="./Environment.html"><li class="nvs">Environment</li></a>
+                    <a href="./Lifeguidance.html"><li class="nvs">Life Guidance</li></a>
+                    <a href="./Careerguidance.html"><li class="nvs">Career</li></a>
+                    <a href="./index.html"><li class="fas fa-home nvs"></li></a>
+                </div>
+                <ul>
+                    <a href="./about.html"><li class="nvs">About Us</li></a>
+                    <a href="./join-us.html"><li class="nvs">Join Us</li></a>
+                    <a href="./contact.html"><li class="nvs">Contact Us</li></a>
+                </ul>
+            </ul>
+            <script>
+                var nav = document.querySelector('.menu')
+                var btn = document.querySelector('.fa-list-ul')
+                document.onclick = (e)=>{
+                    if(window.innerWidth < 1027){
+                        console.log(e.target.classList)
+                        if(e.target.classList[2] == "nvm" || e.target.classList == "nvs"){
+                            nav.setAttribute('class', "menu nv")
+                        }
+                        else{
+                            nav.setAttribute('class', "menu")
+                        }
+                    }
+                }
+            </script>
     </nav>
 
     <!-- ------------x---------------  Navigation --------------------------x------------------- -->
@@ -411,7 +395,7 @@
                                 <span>(05)</span>
                             </li>
                             <li class="list-items" data-aos="fade-left" data-aos-delay="20">
-                                <a href="./Careerguidance.html">Career Guidance</a>
+                                <a href="./Careerguidance.html">Career</a>
                                 <span>(02)</span>
                             </li>
                             <li class="list-items" data-aos="fade-left" data-aos-delay="30">
@@ -664,7 +648,7 @@
                 <a href="./National.html" target="_blank"><h4>National</h4></a>
                 <a href="./International.html" target="_blank"><h4>International</h4></a>
                    
-                <a href="./Careerguidance.html" target="_blank"><h4>Career Guidance</h4></a>
+                <a href="./Careerguidance.html" target="_blank"><h4>Career</h4></a>
                 <a href="./Lifeguidance.html" target="_blank"><h4>Life Guidance</h4></a>
                 <a href="./Environment.html" target="_blank"><h4>Environment</h4></a>
                 <a href="./Finance.html" target="_blank"><h4>Finance</h4></a>
